@@ -1,0 +1,51 @@
+#server:
+#  port: 8080
+#
+#spring:
+#  profiles:
+#    active: dev
+#
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/smart_campus?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: root        # apna password daalo
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update    # dev ke liye: update; prod me validate/better
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#
+#  jackson:
+#    serialization:
+#      WRITE_DATES_AS_TIMESTAMPS: false
+#
+#  # Agar mail use karoge to config (optional)
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: your-email@gmail.com      # optional
+#    password: your-app-password         # optional
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#
+## JWT settings
+#jwt:
+#  secret: MyVerySecretKeyMyVerySecretKey1234567890ABCD   # 32+ char random
+#  expiration: 86400000   # 1 day in ms
+#
+## Logging
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.security: DEBUG
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

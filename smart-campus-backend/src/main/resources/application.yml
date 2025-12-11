@@ -1,0 +1,3 @@
+jwt:
+  secret: MyVerySecretKeyMyVerySecretKey123456    # 32+ chars
+  expiration: 86400000    # 1 day in ms
