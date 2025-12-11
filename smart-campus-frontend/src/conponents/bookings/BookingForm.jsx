@@ -3,6 +3,7 @@ import { useAuth } from "../../context/AuthContext";
 import { createBooking } from "../../services/bookingService";
 import { getAvailableResources } from "../../services/resourceService";
 
+
 export default function BookingForm({ onBooked }) {
   const { user } = useAuth();
   const [resources, setResources] = useState([]);

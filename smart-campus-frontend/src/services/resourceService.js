@@ -18,3 +18,9 @@ export const updateResource = async (id, payload) => {
 export const deleteResource = async (id) => {
   await api.delete(`/api/resources/${id}`);
 };
+
+// getAvailableResources
+export const getAvailableResources = async () => {
+  const res = await api.get("/api/resources/available"); // apna endpoint daalna
+  return res.data;
+};

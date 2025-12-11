@@ -1,6 +1,2 @@
-
-@tailwind utilities;
-/* @import "tailwindcss"; */
-body {
-  
-}
+@import "tailwindcss";
+/* yahan apne custom styles likh sakte ho */

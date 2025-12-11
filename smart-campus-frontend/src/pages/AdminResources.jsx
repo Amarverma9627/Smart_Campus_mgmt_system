@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import MainLayout from "../components/layout/MainLayout";
-import ResourceTable from "../components/resources/ResourceTable";
+import MainLayout from "../conponents/layout/MainLayout";
+import ResourceTable from "../conponents/resources/ResourceTable";
 import {
   getAllResources,
   createResource,

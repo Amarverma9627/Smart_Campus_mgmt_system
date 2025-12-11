@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import MainLayout from "../components/layout/MainLayout";
-import BookingForm from "../components/bookings/BookingForm";
+import MainLayout from "../conponents/layout/MainLayout";
+import BookingForm from "../conponents/bookings/BookingForm";
 import { useAuth } from "../context/AuthContext";
 import { getUserBookings } from "../services/bookingService";
 
